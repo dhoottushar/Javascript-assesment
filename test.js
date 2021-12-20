@@ -88,6 +88,41 @@ for(var i=0; i<length; i++){
 //'02'
 1 + +'1' + '2'
 
+// double equals (loose equality)
+// a == b
+// content should match
+// 1 == '1' // true
+
+// a===b(strict equality)
+// content and data type both should match
+
+
+false === 0 // false
+false == 0 // true
+true == 1 // true 
+0 
+""
+false, 0 , ""
+0 == ""
+false == 0
+"" == false
+
+//  null v undefined
+var arr = null;
+var a;
+console.log(a)
+null == null
+null === undefined // false
+// type of null is object
+undefined == undefined
+
+
+
+
+
+
+
+
 
 
 
