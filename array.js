@@ -29,3 +29,47 @@ const fruits = ['Banana', 'Apple', 'Orange']
 for(var i = fruits.length - 1; i >= 0; i--){
     console.log(fruits[i])
 }
+//Converting arrays to string
+//console.log(fruits.toString())
+// Join
+//console.log(fruits.join(' _ '))
+// Merge two array
+const arr12 = ['email',"name"]
+const arr2 = ['abc', 'xyz']
+const arr3 = ['df', 'sf']
+console.log(arr12.concat(arr2, arr3))
+//splice
+console.log(fruits.splice(0,1))
+// Date
+//2020v 10m 12d
+const d = new Date(2020,10,12);
+console.log(d)
+document.getElementById('dateObj').innerHTML = d
+
+
+const date2 = new Date();
+console.log(date2.getDate())
+console.log(date2.getDate())
+console.log(date2.getDate())
+console.log(date2.getDate() + '/' + date2.getMonth() + '/' + date2.getUTCFullYear())
+
+setTimeout(function(){
+    console.log('tushar')
+},2000)
+
+function sayHi(){
+    alert('hello')
+}
+setTimeout(sayHi,3000)
+var interval = setInterval(function(){
+    console.log('tushar')
+},2000)
+clearInterval(interval)
+
+for(let i = 0; i < 5; i++){
+    setTimeout(function(){console.log(i)},1000)
+}
+
+// hoisting
+console.log(hoist)
+let hoist;
