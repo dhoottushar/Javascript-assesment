@@ -66,10 +66,25 @@ var interval = setInterval(function(){
 },2000)
 clearInterval(interval)
 
-for(let i = 0; i < 5; i++){
+for(var i = 0; i < 5; i++){
     setTimeout(function(){console.log(i)},1000)
 }
 
 // hoisting
 console.log(hoist)
-let hoist;
+var hoist;
+
+let ab = 2;
+ab = 6;
+
+ {
+     var xz = 1;
+ }
+ console.log(xz)
+
+
+{
+    x = x + 1
+    let x;
+    console.log(x)
+}
