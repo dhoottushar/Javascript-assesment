@@ -123,6 +123,7 @@ const person = {}
 person.firstName = 'tushar'
 person.lastname = 'dhoot'
 
+
 var a33 = 5;
 var bCopy = a33;
 console.log(bCopy)
@@ -134,6 +135,59 @@ itemsCpy.product = 'iphone'
 // Spread operator ...
 delete itemsCpy['qty']
 
+let user = {};
+alert(user.noproperty === undefined);
+// key in object
+user =  {age: 30, isAdmin: true,};
+alert("dd" in user)
+
+
+for(let ky in user){
+    alert(ky)
+    console.log(user[ky]);
+}
+let m ={
+    width:200,
+    height:300,
+    title: "my menu"
+}
+let clone = {};
+for(let k in m){
+    clone[k]=m[k]
+}
+clone.title = "diff"
+console.log(Object.assign(clone, {isShow: true},{age:40}));
+console.log({...clone, isShow: false, fulldetails: "tushar dhoot"})
+//output
+m = {
+    width:400,
+    height:600,
+    title: "My menu"
+}
+
+// objct.
+function multiplyOnlyNumeric(m){
+    for(let key in m){
+        if(typeof m[key] === 'number'){
+            m[key] = m[key]*2
+        }
+    }
+
+}
+multiplyOnlyNumeric(m)
+console.log(m)
+//compare obj
+let a = {};
+let b = a;
+console.log(a == b)
+console.log(a === b)
+
+
+
+let d = {};
+let e = {};
+// two independent object are not equal evcen though they are same
+console.log(d == e)
 function sorting() {
     let sort1 = false;
     if (element > 5) {
@@ -164,5 +218,11 @@ let finalFilterResult = characters.filter((c,index)=> {
 })
 console.log(finalFilterResult)
 
+
+let objc = [
+    {'ag':5},
+    {'fn':'tush'},
+    {'fn': 'vv'}
+]
 
 
